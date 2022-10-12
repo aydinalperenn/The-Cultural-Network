@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4EA813D-B7EF-4E60-B839-7EE08921C81A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>The_Cultural_Network</RootNamespace>
+    <AssemblyName>The Cultural Network</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuyurular.Designer.cs">
+      <DependentUpon>FrmDuyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEtkinlikListesiGenel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEtkinlikListesiGenel.Designer.cs">
+      <DependentUpon>FrmEtkinlikListesiGenel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciBiletlerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciBiletlerim.Designer.cs">
+      <DependentUpon>FrmKullaniciBiletlerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciBilgiDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciBilgiDüzenle.Designer.cs">
+      <DependentUpon>FrmKullaniciBilgiDüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModeratorAlanPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModeratorAlanPaneli.Designer.cs">
+      <DependentUpon>FrmModeratorAlanPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModeratorEtkGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModeratorEtkGoster.Designer.cs">
+      <DependentUpon>FrmModeratorEtkGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModeratorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModeratorGiris.Designer.cs">
+      <DependentUpon>FrmModeratorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModeratorSirketPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModeratorSirketPaneli.Designer.cs">
+      <DependentUpon>FrmModeratorSirketPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSirketBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSirketBilgiDuzenle.Designer.cs">
+      <DependentUpon>FrmSirketBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSirketDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSirketDetay.Designer.cs">
+      <DependentUpon>FrmSirketDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisler.Designer.cs">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDesign.Designer.cs">
+      <DependentUpon>FrmDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciDetay.Designer.cs">
+      <DependentUpon>FrmKullaniciDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciGiris.Designer.cs">
+      <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciKayit.Designer.cs">
+      <DependentUpon>FrmKullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciBakiyeYukle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciBakiyeYukle.Designer.cs">
+      <DependentUpon>FrmKullaniciBakiyeYukle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSirketGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSirketGiris.Designer.cs">
+      <DependentUpon>FrmSirketGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModeratorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModeratorDetay.Designer.cs">
+      <DependentUpon>FrmModeratorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
+    <EmbeddedResource Include="FrmDuyurular.resx">
+      <DependentUpon>FrmDuyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEtkinlikListesiGenel.resx">
+      <DependentUpon>FrmEtkinlikListesiGenel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciBiletlerim.resx">
+      <DependentUpon>FrmKullaniciBiletlerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciBilgiDüzenle.resx">
+      <DependentUpon>FrmKullaniciBilgiDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModeratorAlanPaneli.resx">
+      <DependentUpon>FrmModeratorAlanPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModeratorEtkGoster.resx">
+      <DependentUpon>FrmModeratorEtkGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModeratorGiris.resx">
+      <DependentUpon>FrmModeratorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModeratorSirketPaneli.resx">
+      <DependentUpon>FrmModeratorSirketPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSirketBilgiDuzenle.resx">
+      <DependentUpon>FrmSirketBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSirketDetay.resx">
+      <DependentUpon>FrmSirketDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisler.resx">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDesign.resx">
+      <DependentUpon>FrmDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciDetay.resx">
+      <DependentUpon>FrmKullaniciDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciGiris.resx">
+      <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciKayit.resx">
+      <DependentUpon>FrmKullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciBakiyeYukle.resx">
+      <DependentUpon>FrmKullaniciBakiyeYukle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSirketGiris.resx">
+      <DependentUpon>FrmSirketGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModeratorDetay.resx">
+      <DependentUpon>FrmModeratorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
